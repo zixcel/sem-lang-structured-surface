@@ -1,18 +1,29 @@
 # @hathq/sem-lang-structured-surface
 
-Format-neutral, bounded syntax evidence for sem-lang. It represents documents,
-elements, text, references, typed values and their structural relations without
-claiming that any observed structure is true meaning.
+Represent document structure in a common evidence format before a caller interprets its meaning.
 
-Format adapters provide a `StructuredSurface`; consumers may add deterministic
-typed observations and request structural grouping candidates. A candidate is
-never a semantic promotion. Missing relations remain explicit unresolved node
-references. Raw input is not retained by this package.
+## What you can do
 
-Format adapters mark link-owned wording with `reference-label`. The text stays
-available as syntax evidence but `visibleSurfaceText` excludes it from ordinary
-body content because the reference node is the canonical structured output.
-No phrase, locale or language-specific rule is involved.
+- Validate bounded structural input.
+- Preserve document and field references across formats.
 
-This package does not parse HTML or Markdown, access a network, execute content,
-write memory, or depend on Hatter.
+## Current scope
+
+Structural evidence describes syntax and source locations. Semantic interpretation belongs to the caller.
+
+Package distribution is not activated by this documentation. Use the checked-in source and the declared dependency versions; published availability must be verified separately.
+
+## Getting started
+
+Use the package manager matching the checked-in lockfile and the Node.js version declared in `package.json` or the development configuration. Run from this repository:
+
+```sh
+npm install
+npm run test
+```
+
+## Documentation and source
+
+[Usage guide](docs/getting-started.md)
+
+[Implementation and public interfaces](src) · [Verification cases](test) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md) · [License](LICENSE) · [Attribution notices](NOTICE)
