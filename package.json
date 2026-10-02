@@ -1,0 +1,27 @@
+{
+  "name": "@hathq/sem-lang-structured-surface",
+  "version": "0.10.0",
+  "type": "module",
+  "license": "Apache-2.0",
+  "description": "Bounded format-neutral structured surface contract for sem-lang",
+  "files": [
+    "src",
+    "README.md",
+    "repository.toml",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zixcel/sem-lang-structured-surface.git"
+  }
+}
